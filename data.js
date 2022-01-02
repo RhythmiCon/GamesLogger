@@ -1,6 +1,6 @@
 export const data = {
    title: example,
-   playtime: 10,
+   playtime: 0,
    liked: [],
    disliked: [],
 };

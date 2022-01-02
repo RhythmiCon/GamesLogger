@@ -1,7 +1,7 @@
 import express from "express";
 import path from "path";
-
 import __dirname from "./dirname.js";
+
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import logger from "morgan";
@@ -9,6 +9,7 @@ import logger from "morgan";
 import gamesRouter from "./routes/games.js";
 
 const app = express();
+const PORT = 3000;
 
 app.use(logger("dev"));
 app.use(cors());
