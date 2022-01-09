@@ -3,6 +3,10 @@ import pg from "pg";
 import { host, dbname, username, password, port } from "../config.js";
 
 console.log(host);
+console.log(username);
+console.log(dbname);
+console.log(password);
+console.log(port);
 
 const pool = new pg.Pool({
    user: username,

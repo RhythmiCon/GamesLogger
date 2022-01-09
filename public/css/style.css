@@ -36,6 +36,18 @@ body {
    cursor: pointer;
 }
 
+#new__game,
+#load__game {
+   cursor: pointer;
+   display: block;
+   position: relative;
+   text-align: center;
+   width: 7em;
+   height: 100%;
+   border-radius: 0.5em;
+   transition: all 0.4s;
+}
+
 #new__game__form {
    display: flex;
    flex-direction: column;
@@ -44,6 +56,85 @@ body {
    /* border: 1px solid red; */
 }
 
-/* #new__game__form p {
-   text-align: center;
-} */
+#add__btn {
+   font-family: "Alata", sans-serif;
+   height: 3em;
+   background-color: orange;
+   border: 1px solid black;
+   border-radius: 1em;
+   cursor: pointer;
+   box-shadow: 2px 0px 5px;
+}
+
+#add__btn:active {
+   box-shadow: 2px 0px 4px;
+   transform: scale(0.95);
+}
+
+#displayHeaders {
+   display: flex;
+   justify-content: space-around;
+   font-family: "Alata", sans-serif;
+}
+
+#fileHeader {
+   flex: 1;
+}
+
+#titleHeader {
+   flex: 2;
+}
+
+#playtimeHeader {
+   flex: 1;
+}
+
+#ratingHeader {
+   flex: 1;
+}
+
+#commentHeader {
+   flex: 4;
+}
+
+.table__headers {
+   background-color: rgba(255, 166, 0, 0.787);
+   border: 0.5px solid black;
+   border-radius: 0.3em;
+   padding: 2px;
+   padding-left: 5px;
+}
+
+#article {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   font-family: "Alata", sans-serif;
+   background-color: rgba(255, 255, 255, 0.637);
+   border: 2px solid black;
+   border-radius: 1em;
+   height: 10em;
+   width: 100%;
+   margin-top: 0.15em;
+}
+
+#file__number {
+   flex: 1;
+   margin-left: 2em;
+}
+
+#game__title {
+   flex: 2;
+}
+
+#playtime__display {
+   flex: 1;
+}
+
+#rating__display {
+   flex: 1;
+}
+
+#comment__display {
+   flex: 4;
+}

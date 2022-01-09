@@ -4,7 +4,8 @@
    "private": true,
    "type": "module",
    "scripts": {
-      "start": "nodemon ./bin/www.js"
+      "start": "nodemon -r dotenv/config  ./bin/www.js",
+      "dbcreatetable": "node -r dotenv/config ./db/scripts/createGamesTable.js"
    },
    "dependencies": {
       "cookie-parser": "~1.4.4",

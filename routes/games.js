@@ -1,4 +1,5 @@
 import express from "express";
+import { addGame } from "../models/addGame.js";
 import { getAllGames } from "../models/getAllGames.js";
 const router = express.Router();
 
@@ -11,6 +12,13 @@ router.get("/", async function (req, res, next) {
    });
 });
 
-router.post("/", function (req, res, next) {});
+router.post("/", async function ({ body }, res, next) {
+   const { title, playtime, rating, comment } = body;
+   const response = await addGame(title, playtime, rating, comment);
+
+   res.json({
+      success: true,
+   });
+});
 
 export default router;

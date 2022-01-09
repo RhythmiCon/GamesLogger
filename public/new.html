@@ -7,25 +7,34 @@
          href="https://fonts.googleapis.com/css2?family=Alata&family=DotGothic16&family=Orbitron:wght@400;500&display=swap"
          rel="stylesheet"
       />
-      <script src="./js/index.js" defer></script>
+      <script src="./js/new.js" defer></script>
    </head>
    <body>
       <div class="page__title">
          <h1 class="main__heading">GamesLogger</h1>
       </div>
       <div id="new__game__form">
-         <form id="log__new">
+         <form autocomplete="off" id="log__new">
             <label for="game__title">What's the title?</label><br />
             <input id="game__title" /><br /><br />
             <label for="game__playtime">What was your playtime?</label><br />
             <input id="game__playtime" /><br /><br />
-            <label for="positive__points">What did you like about it?</label
+            <label for="rating">What rating would you give it?</label><br />
+            <input type="checkbox" value="0" class="rating">0</input>
+            <input type="checkbox" value="1" class="rating">1</input>
+            <input type="checkbox" value="2" class="rating">2</input>
+            <input type="checkbox" value="3" class="rating">3</input>
+            <input type="checkbox" value="4" class="rating">4</input>
+            <input type="checkbox" value="5" class="rating">5</input>
+            <input type="checkbox" value="6" class="rating">6</input>
+            <input type="checkbox" value="7" class="rating">7</input>
+            <input type="checkbox" value="8" class="rating">8</input>
+            <input type="checkbox" value="9" class="rating">9</input>
+            <input type="checkbox" value="10" class="rating">10</input><br /><br />
+            <label for="comment">What do you have to say about it?</label
             ><br />
-            <input id="positive__points" /><button>+</button><br /><br />
-            <label for="negative__points">What did you dislike about it?</label
-            ><br />
-            <input id="negative__points" /><button>+</button><br /><br />
-            <button id="add__btn">Add to GamesLogger!</button>
+            <textarea id="comment" rows="10" cols="50"></textarea><br /><br />
+            <button type="button" id="add__btn">Add to GamesLogger!</button>
          </form>
       </div>
    </body>
